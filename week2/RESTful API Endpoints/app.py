@@ -11,9 +11,9 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def chian():
     chain = test.chain
-    print('Getting chain values')
+
     dictChain = [block.__dict__.copy() for block in chain]
-    print('chain values are {}'.format(dictChain))
+
     for dictBlock in dictChain:
         dictBlock['transactions'] = [tx.__dict__ for tx in dictBlock['transactions']]
     return jsonify(dictChain), 200
@@ -26,7 +26,7 @@ def mine():
     newBlock = test.addBlcok
     if newBlock !=None :
         values = copy.deepcopy(newBlock())
-        print(values)
+
         res={
             'Message': 'New Block has been added successfully', 'Details': {
                 'index': values.index,
@@ -47,9 +47,9 @@ def mine():
 @app.route('/opentxs', methods=['GET'])
 def opentxs():
     """ get the unconfirmed transactions or any transaction has not been included in a block """
-    print("Get unconfirmed Transactions")
+
     txs=test.unconfirmed
-    print(txs)
+
     if txs!= None:
         dictTx = [tx.__dict__ for tx in txs]
         res={
