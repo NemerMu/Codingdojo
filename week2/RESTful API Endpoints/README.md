@@ -31,7 +31,4 @@ Each endpoint should handle any error that is out of bounds
     A web API responds to a request using a URL path with a block index parameter  http://127.0.0.1:8020/block/2  
 
 
-### Readability:
-Your project should contain a README.md file that includes instructions on the deployment of your project for the RESTful API along with its endpoints.
-
 
