@@ -22,27 +22,19 @@ def chian():
 @app.route('/mine', methods=['POST'])
 def mine():
     """ mine a block """
-    
-    newBlock = test.addBlcok
-    if newBlock !=None :
-        values = copy.deepcopy(newBlock())
-
-        res={
-            'Message': 'New Block has been added successfully', 'Details': {
-                'index': values.index,
-                'previousHash': values.previousHash,
-                'timestamp': values.timestamp,
-                'proof': values.proof,
-                'hash': values.hash}
+    block = test.addBlcok()
+    if block != None:
+        dictBlock = block.__dict__.copy()
+        dictBlock['transactions'] = [tx.__dict__ for tx in dictBlock['transactions']]
+        res = {
+            'Block': dictBlock,
         }
         return jsonify(res), 200
-    
     else:
-        res={
-            'Message': 'The Block has been rejected!'
+        res = {
+            'Error': 'Not able to mine a block',
         }
         return jsonify(res), 500
-
 
 @app.route('/opentxs', methods=['GET'])
 def opentxs():
