@@ -20,7 +20,7 @@ pragma solidity >=0.6.0 <0.8.1;
 contract TechInsurance {
     
 
-         event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
 
     /**
      * @dev Emitted when `owner` enables `approved` to manage the `tokenId` token.
