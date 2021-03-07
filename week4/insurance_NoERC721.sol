@@ -144,8 +144,7 @@ contract TechInsurance {
     
     function buyInsurance(uint _productIndex) public payable TimeCheck {
         require(productIndex[_productIndex].offered == true, "This item is sold out!");
-        require(msg.value <= productIndex[_productIndex].price, "You don't have enough tokens!");
-        doNotOffer(_productIndex);        
+        require(msg.value <= productIndex[_productIndex].price, "You don't have enough tokens!");       
         Client(true, block.timestamp);
         _transfer(ownerOf(_productIndex), msg.sender,_productIndex);   
         doNotOffer(_productIndex);   
