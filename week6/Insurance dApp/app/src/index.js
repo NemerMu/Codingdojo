@@ -66,12 +66,9 @@ const App = {
 	  const prodiD = parseInt(document.getElementById("productId1").value);
 	  const prodD = await fetch(prodiD).call(); // <- prodcutId1
 	  const prodElement = document.getElementsByClassName("fProduct");
-	  prodElement[0].innerHTML = prodD[0];
-    prodElement[1].innerHTML = prodD[1];
-    prodElement[2].innerHTML = prodD[2];
-    prodElement[3].innerHTML = prodD[3];
-    prodElement[4].innerHTML = prodD[4];
-    console.log(prodD)
+	  for(var i = 0; i < prodElement.length; i++){
+ 	     prodElement[i].innerHTML = prodD[i];
+    }
   },
 
   setStatus: function(message) {
