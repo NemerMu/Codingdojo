@@ -27,7 +27,7 @@ A step by step series of examples that tell you have to get a development env ru
 Clone this repository:
 
 ```
-git clone https://github.com/.........
+git clone https://github.com/NemerMu/codingdojo.git
 ```
 
 On ```truffle-config.js``` Change Compailers version to ```0.8.0``` make sure the development host values are matching with other tools.
