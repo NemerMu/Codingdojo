@@ -1,4 +1,4 @@
-# Donation tacking & infotmation audting
+# Donation tacking & audting
 
 This repository containts an Ethereum DApp that demonstrates a Donation tracking between a Doner and Non-profit organization. The user story start with the organization by regitering to the platform. When it gets approval, the organization can reaise campaign. Each orgatnization must provide how mant executors envloved on the campaign operation plus thier infromation. Each Executor information must inserted in order based on their level of the operation. Depending on the campaign phase, the executor can change the operation states. if the state is complete, automatically the operation phase will move to the following executor, and the access to change its states. Every doner support those campaign can track these campaign operation and get every update of its state.
 
