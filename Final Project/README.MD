@@ -4,13 +4,13 @@ This repository containts an Ethereum DApp that demonstrates a Donation tracking
 
 The DApp User Interface when running should look like...
 
-![truffle test](images/..)
+![image](images/regOrg.PNG)
 
-![truffle test](images/..)
+![image](images/verOrg.PNG)
 
-![truffle test](images/..)
+![image](images/add_camp.PNG)
 
-![truffle test](images/..)
+![image](images/donate.PNG)
 
 
 
@@ -39,8 +39,8 @@ truffle develop
 
 Your terminal should look something like this:
 
-![truffle test](images/..)
-
+![truffle test](images/truffle_develop1.PNG)
+![truffle test](images/truffle_develop2.PNG)
 
 Now Compile smart contracts:
 
@@ -50,7 +50,7 @@ compile
 
 Your terminal should look something like this:
 
-![truffle test](images/..)
+![truffle test](images/compile_1.PNG)
 
 This will create the smart contract artifacts in folder ```build\contracts```.
 
@@ -62,7 +62,8 @@ migrate --reset
 
 Your terminal should look something like this:
 
-![truffle test](images/..)
+![truffle test](images/migrate_1.PNG)
+![truffle test](images/migrate_2.PNG)
 
 Test smart contracts:
 
@@ -72,7 +73,7 @@ test
 
 All 2 tests should pass.
 
-![truffle test](images/..)
+![truffle test](images/test_1.PNG)
 
 
 In a separate terminal window, launch the DApp:
@@ -80,6 +81,8 @@ In a separate terminal window, launch the DApp:
 ```
 npm run dev
 ```
+
+![truffle test](images/run_dev.PNG)
 
 ## Built With
 
